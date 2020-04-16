@@ -1,0 +1,12 @@
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{user.username}}</h5>
+    <p class="card-text">{{user.email}}</p>
+    <p class="card-text">{{user.id}}</p>
+  </div>
+</div>
+
+<div class="comments" *ngFor="let comment of comments">
+  <h3>{{comment.author_id.username}}</h3>
+  <p>{{comment.body}}</p>
+</div>
